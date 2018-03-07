@@ -12,3 +12,5 @@ class WordSearchTests(unittest.TestCase):
 
     def test_reading_puzzle_from_text_file(self):
         pass
+        #changing the constructor to take a file as a parameter
+
