@@ -19,9 +19,6 @@ class WordSearch:
     def read_words(self, file):
         with open(file,"r") as f:
             for line in f.readlines(1):
+                line = line.strip("\n")
                 for word in line.split(","):
                     self.words.append(word)
-        print(self.words)
-
-
-this = WordSearch()
