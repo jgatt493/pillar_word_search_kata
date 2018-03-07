@@ -1,16 +1,17 @@
 class WordSearch:
 
     """A class containing the necessary methods to solve a word search.
+        input: Tales a puzzle in the form of a text file
+        output: Returns a solution to the puzzle
 
-    words: a list to hold the words to be found in the puzzle
-    puzzle: a list to hold the puzzle. This list will simulate a matrix by containing
+        words: a list to hold the words to be found in the puzzle
+        puzzle: a list to hold the puzzle. This list will simulate a matrix by containing
          a list of lists, with each indicie accessible via puzzle[x][y]"""
 
-    def __init__(self):
-
+    def __init__(self, file):
             self.words = []
             self.puzzle = []
-            self.read_words("puzzle.txt")
+            self.read_words(file)
 
     """reads the first line of the file containing the words to be found,
         appends to self.words

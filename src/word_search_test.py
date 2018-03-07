@@ -5,9 +5,10 @@ from word_search import WordSearch
 class WordSearchTests(unittest.TestCase):
 
     def setUp(self):
-        self.word_search = WordSearch()
+        self.word_search = WordSearch("puzzle.txt")
 
-    def testReadingWordsFromTextFile(self):
+    def test_reading_words_from_text_file(self):
         self.assertEqual(self.word_search.words,['BONES', 'KHAN', 'KIRK', 'SCOTTY', 'SPOCK', 'SULU', 'UHURA'])
 
-unittest.main()
+    def test_reading_puzzle_from_text_file(self):
+        pass
