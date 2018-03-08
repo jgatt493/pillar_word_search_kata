@@ -23,3 +23,12 @@ class WordSearch:
                 line = line.strip("\n")
                 for word in line.split(","):
                     self.words.append(word)
+
+
+            for line in f.readlines():
+                line = line.strip('\n')
+                letter_array = []
+                for letter in line.split(","):
+                    letter_array.append(letter)
+                self.puzzle.append(letter_array)
+

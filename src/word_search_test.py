@@ -11,6 +11,8 @@ class WordSearchTests(unittest.TestCase):
         self.assertEqual(self.word_search.words,['BONES', 'KHAN', 'KIRK', 'SCOTTY', 'SPOCK', 'SULU', 'UHURA'])
 
     def test_reading_puzzle_from_text_file(self):
-        pass
-        #changing the constructor to take a file as a parameter
+        self.word_search_2 = WordSearch("puzzle_test.txt")
+        self.assertEqual(self.word_search_2.puzzle, [['U','M','K','H'],['L','L','S','H'],
+                                                    ['H','S','U','P'],['B','R','J','S']])
 
+unittest.main()
