@@ -15,4 +15,9 @@ class WordSearchTests(unittest.TestCase):
         self.assertEqual(self.word_search_2.puzzle, [['U','M','K','H'],['L','L','S','H'],
                                                     ['H','S','U','P'],['B','R','J','S']])
 
+    def test_getting_first_letter_of_first_word(self):
+        self.word_search.get_next_letter()
+        self.assertEqual(self.word_search.current_letter,'B')
+        
+
 unittest.main()

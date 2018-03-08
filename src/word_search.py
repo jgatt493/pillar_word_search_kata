@@ -32,3 +32,10 @@ class WordSearch:
                     letter_array.append(letter)
                 self.puzzle.append(letter_array)
 
+    def get_next_letter(self):
+        self.current_letter = self.words[0][0]
+
+
+
+        
+        
